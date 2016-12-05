@@ -5,6 +5,6 @@ for line in f:
         if len(line) > mx:
             mx = len(line)
         if len(line) < mn:
-            mn=len(line)
+            mn = len(line)
 print(mx/mn)
 f.close()
