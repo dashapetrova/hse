@@ -5,7 +5,7 @@ def main():
     for line in f:
         line = re.sub("в(и|и́)кинг(а(ми?|х)?|о(в|м)|у|е|и)?[^\w]","бурундук\\2",line)
         line = re.sub("В(и|и́)кинг(а(ми?|х)?|о(в|м)|у|е|и)?[^\w]","Бурундук\\2",line)
-        s = s+line
+        s = s + line
     f.close()
     return s
 
