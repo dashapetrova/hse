@@ -10,10 +10,9 @@ def main():
     results=[]
     for line in sents:
         k=0
-        words=line.split()
-        k=['+' for w in words]
+        k=['+' for w in line.split()]
         if len(k)>10:
-            for w in words:
+            for w in line.split():
                 if w.istitle()==True:
                     results.append(w)
     return results
