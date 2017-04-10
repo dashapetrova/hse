@@ -1,6 +1,6 @@
 import re
 def lines():
-    f = open('bk2.txt','r',encoding='utf-8')
+    f = open('vim2.txt','r',encoding='utf-8')
     a = f.read()
     c = re.split(r'[.?!]',a)
     lines = [' '.join([word.strip('.,<>/?""-=_+''""[]{}()*&^%$#@!;:|\«»\n') for word in line.split()]).strip() for line in c]
