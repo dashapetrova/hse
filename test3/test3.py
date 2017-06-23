@@ -10,8 +10,8 @@ def texts(name):
     return x
 
 
-def resutls(s,filename):
-    f = open(filename,"w+",encoding = "utf-8")
+def resutls(s,fname):
+    f = open(fname,"w",encoding = "utf-8")
     f.write(s)
     f.close()
 
